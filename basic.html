@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript basics</title>
+</head>
+
+<body>
+    <h1>Javascript basics</h1>
+    <ul>
+        <li>Spring</li>
+        <li>Summer</li>
+        <li>Fall</li>
+        <li>Winter</li>
+    </ul>
+    <script>
+       let c = 10;
+
+       while(c < 10){
+        console.log("while",c);
+        c++;
+       }
+
+       do{
+        console.log("do while",c);
+        c++;
+       }while(c < 10);
+
+       for (let i = 0; i < 10; i++) {
+        console.log("for" + i);
+       }
+
+       let numbers = [10,20,30,40,50,60,70,80,90];
+
+       for(let i=0; i < numbers.length; i++){
+        console.log(numbers[i]);
+       }
+
+       const jon = {
+        name:"jon",
+        lastName:"Mircha",
+        age:35
+       }
+
+       for (const k in jon) {
+        console.log(`Key: ${k} Value: ${jon[k]}`);
+       }
+
+       for (const e of numbers) {
+        console.log(e);
+       }
+
+       let s = "Hello World";
+
+       for (const c of s) {
+        console.log(c);
+       }
+
+    </script>
+</body>
+
+</html>
